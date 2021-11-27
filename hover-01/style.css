@@ -1,0 +1,60 @@
+body {
+  font-family: "Raleway", sans-serif;
+  color: #222;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin: 0;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+.items {
+  text-align: center;
+}
+
+.items .item {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+.items .item .caption {
+  width: inherit;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-top: 40px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.items .item:hover .caption {
+  opacity: 1;
+}
+
+.items .item .caption a {
+  color: white;
+  text-decoration: none;
+  background-color: teal;
+  padding: 7px;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+.items .item .caption a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.items .item img {
+  width: inherit;
+}
