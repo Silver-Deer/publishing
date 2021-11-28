@@ -1,0 +1,50 @@
+body {
+  font-family: "Raleway", sans-serif;
+  color: #222;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+.gnb {
+  list-style: none;
+  margin: 0;
+  padding: 50px 30px;
+  width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+.gnb li {
+  flex: 1;
+  text-align: center;
+}
+.gnb li a {
+  position: relative;
+}
+.gnb li a:before {
+  content: "";
+  position: absolute;
+  background-color: dodgerblue;
+  height: 2px;
+  width: 0;
+  bottom: -5px;
+  transition: 0.5s;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.gnb li a:hover:before {
+  width: 100%;
+}
